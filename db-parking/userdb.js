@@ -19,6 +19,19 @@ let creatdefult = (cb) => {
 }
 
 
+//////roaaa
+let  updatbalnce = (cb,name,password,value) => {
+  db.userdata.updateOne( {name:name ,password:password} ,  { $set: { balance: value }}, (err, data) => {
+    if (err) {
+      cb(err);
+    } else {
+      console.log("data:", data);
+      cb(data);
+    }
+  });
+};
+
+
 
 /////hala/////
 let getallcostmer = cb => {
@@ -59,6 +72,8 @@ let newuser = (cb,name,phone,balance,password) => {
 
 module.exports = {
   creatdefult,
+  ///////roaa
+  updatbalnce,
   ////hala
     getallcostmer,
     ///////rawabi

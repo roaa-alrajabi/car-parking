@@ -20,25 +20,35 @@ router.get('/defult', (req, res) => {
   })
 });
 
+////roaa//////
+router.get('/false', (req, res) => {
+  mongo.getfalse((result) => {
+    res.json(result);
+  })
+});
+
+
+
+/////////roaa
+router.put('/false', (req, res) => {
+
+  mongo.updatepark((result) => {
+    res.json(result);
+  })
+});
+
+
+
+
+
+
+
 /////////hala
 router.get('/all', (req, res) => {
    ////hala
   });
   
 
-/////////roaa
-  router.put('/park/:id/:status', (req, res) => {
-
-  let id = encodeURIComponent(req.params.id);
-  let status = encodeURIComponent(req.params.status);
-
-  console.log("park","id",id)
-  console.log("park","status",status)
-
-  mongo.updatepark((result) => {
-    res.json(result);
-  },id,status)
-});
 
 
 

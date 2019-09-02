@@ -17,6 +17,23 @@ router.get('/defult', (req, res) => {
   })
 });
 
+/////roaa
+router.put('/:name/:password/:value', (req, res) => {
+
+  let name = encodeURIComponent(req.params.name);
+  let password = encodeURIComponent(req.params.password);
+  let value = encodeURIComponent(req.params.value);
+
+
+  console.log("server","id",name)
+  console.log("server","status",password)
+
+  mongo.updatbalnce((result) => {
+    res.json(result);
+  },name,password,value)
+});
+
+
 
 ////////hala////////
 router.get('/all', (req, res) => {
@@ -69,18 +86,7 @@ router.post('/:name/:phone/:balance/:password', (req, res) => {
 
 
 
-//  app.put('/task/:id/:status', (req, res) => {
 
-//   let id = encodeURIComponent(req.params.id);
-//   let status = encodeURIComponent(req.params.status);
-
-//   console.log("server","id",id)
-//   console.log("server","status",status)
-
-//   mongo.updatetask((result) => {
-//     res.json(result);
-//   },id,status)
-// });
 
 
 module.exports = router;
