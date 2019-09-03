@@ -1,7 +1,12 @@
 body{
     width:800px;
     margin: auto;
+    font-family: 'Audiowide';
 } 
+
+h1{
+    text-align: center;
+}
 
 
 .grid{
@@ -15,7 +20,7 @@ body{
     grid-row-gap: 50px;
 }
 .item{
-  border: 2px dashed yellow;
+  border: 2px dashed rgb(91, 84, 155);
   padding: 10px;
   font-size: 50px;
   text-align: center;
@@ -23,7 +28,7 @@ body{
 
 .btn {
  background-color: black;
- color:yellow ;
+ color:rgb(97, 123, 161) ;
 }
 
 .border-secondary{
@@ -36,3 +41,17 @@ body{
      float: right;
      font-size: 20px;
 }
+.button1{
+    position: absolute;
+    left: 67%;
+    bottom: 15%;  
+    width:150px;
+}
+.button1:hover{
+    background: rgb(97, 123, 161)
+    
+}
+.button2:hover{
+    background: rgb(97, 123, 161)
+}
+

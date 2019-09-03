@@ -51,17 +51,19 @@ export default class Form extends Component{
     render(){
         return (
           <> 
-            <label> Time
-            <input type="number" name="timer" min="1" max="5"className="border border-secondary my-1 mr-2 "  onChange={this.money}/>
+            <label> Time  
+              <input type="number" name="timer" min="1" max="5"className="border border-secondary my-1 mr-2 "  onChange={this.money}/>
             </label>
             <br/>
             {/* <label> Parking
             <input type="number" name="timer" min="1" max="8" onChange={this.Booking}/> 
             </label> */}
-            <button   type="button"  className="btn btn-warning btn-lg my-1 mr-2"onClick={this.props.getPark.bind(this)}>Booking</button>
+            
+            <button   type="button"   className="btn btn-warning btn-lg my-1 mr-2 button1"onClick={this.props.getPark.bind(this)}>Booking</button>
             <br/>
+            
            {/* <button  onClick={this.props.getPark.bind(this)}>Booking</button> */}
-           <button type="button" className="btn btn-warning btn-lg my-1 mr-1"onClick={this.props.updatastate.bind(this)}>Comfrmation</button>
+           <button type="button" className="btn btn-warning btn-lg my-1 mr-1 button2"onClick={this.props.updatastate.bind(this)}>confirmation</button>
 
           </>
         );

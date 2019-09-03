@@ -5,6 +5,7 @@ export default class App extends Component{
     render(){
         return (
           <>
+          <h1>Each houres per  1jd </h1>
           <div className="grid">
            <div className="item">1</div>
            <div className="item">2</div>
@@ -17,7 +18,7 @@ export default class App extends Component{
            <div className="item">9</div>
           </div>
          
-         
+
           {/* <table  cellPadding="90px" fontSize="10px"  >
           <tr>
           <td style={{backgroundColor:"green"}} >1</td>
