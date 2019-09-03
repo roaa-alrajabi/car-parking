@@ -5,18 +5,18 @@ export default class App extends Component{
     render(){
         return (
           <>
-          <table border="1px "cellPadding="40px" margin="auto">
+          <table border="1px "cellPadding="40px" >
           <tr>
           <td style={{backgroundColor:"green"}} >1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
+          <td style={{backgroundColor:"green"}}>2</td>
+          <td style={{backgroundColor:"green"}}>3</td>
+          <td style={{backgroundColor:"green"}}>4</td>
           </tr>
           <tr>
-          <td>5</td>
-          <td>6</td>
-          <td>7</td>
-          <td>8</td>
+          <td style={{backgroundColor:"green"}}>5</td>
+          <td style={{backgroundColor:"green"}}>6</td>
+          <td style={{backgroundColor:"green"}}>7</td>
+          <td style={{backgroundColor:"green"}}>8</td>
           </tr>
           </table>
           

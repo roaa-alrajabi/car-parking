@@ -5,7 +5,8 @@ import axios from 'axios'
 
 export default class App extends Component{
   state={
-    data:[]
+    data:[],
+    isvalid:false
   }
 
  getPark=()=>{
@@ -14,7 +15,20 @@ export default class App extends Component{
    this.setState({
    data:res.data
    })
-   console.log(this.state.data)
+   if(this.state.data.length>0)
+   {
+
+     let isvalid =! this.state.isvalid
+     this.setState({
+      isvalid:isvalid.data[0] 
+     })
+     console.log("can pull down in parking")
+    //  console.log(this.state.data[0])
+   }
+   else
+   { 
+    console.log("asdfgh")
+   }
    })
  }
 
@@ -85,7 +99,7 @@ export default class App extends Component{
   render(){
   return (
     <>
-    <Form getPark={this.getPark} updatastate={this.updatastate} />
+    <Form getPark={this.getPark} updatastate={this.updatastate} data= {this.data} />
     <Map/>
     </>
   );
