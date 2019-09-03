@@ -5,16 +5,21 @@ export default class App extends Component{
     render(){
         return (
           <>
-          <div className="park">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div className="park2">5</div>
-          <div>6</div>
-          <div>7</div>
-          <div>8</div>
-          </div>
+          <table border="1px "cellPadding="40px" margin="auto">
+          <tr>
+          <td style={{backgroundColor:"green"}} >1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          </tr>
+          <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          </tr>
+          </table>
+          
           </>
         );
  }

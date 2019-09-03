@@ -9,17 +9,18 @@ export default class App extends Component{
   }
 
  getPark=()=>{
-  axios.get("http://localhost:9000/false")
+  axios.get("http://localhost:9000/park/false")
    .then(res=>{
    this.setState({
    data:res.data
    })
+   console.log(this.state.data)
    })
  }
 
 
  updatastate=()=>{
-   axios.put("http://localhost:9000/false")
+   axios.put("http://localhost:9000/park/")
    .then(res=>{
      this.setState({
        data:res.data
@@ -30,8 +31,8 @@ export default class App extends Component{
   });
   }
 
-  updateblance=(value)=>{
-    axios.put(`http://localhost:9000/:name/:password/${value}`)
+  updateblance=()=>{
+    axios.put("http://localhost:9000/user/")
     .then(res=>{
      this.setState({
        data:res.data

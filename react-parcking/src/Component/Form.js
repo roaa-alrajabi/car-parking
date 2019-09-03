@@ -56,7 +56,7 @@ export default class Form extends Component{
             {/* <label> Parking
             <input type="number" name="timer" min="1" max="8" onChange={this.Booking}/> 
             </label> */}
-            <button type="button" className="btn btn-warning btn-lg my-1 mr-2"onClick={this.props.getPark.bind(this)}>Booking</button>
+            <button type="button" className="btn btn-warning btn-lg my-1 mr-2"onClick={this.props.getPark}>Booking</button>
            {/* <button  onClick={this.props.getPark.bind(this)}>Booking</button> */}
            <button type="button" className="btn btn-warning btn-lg my-1 mr-2"onClick={this.props.updatastate.bind(this)}>Comfrmation</button>
 
