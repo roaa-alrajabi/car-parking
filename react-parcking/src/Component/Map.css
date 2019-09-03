@@ -1,13 +1,38 @@
 body{
-    margin: 0 auto;
+    width:800px;
+    margin: auto;
+} 
+
+
+.grid{
+    border-top:3px solid black;
+    border-bottom:3px solid black;
+    margin:20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+.item{
+  border: 2px dashed yellow;
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
 }
 
-.park{
+.btn {
+ background-color: black;
+ color:yellow ;
+}
 
-    width: 300px;
-    height:150px;
-    margin: 20px;
-    padding:10px;
-    border-style:solid;
-    font-size: 30px;
+.border-secondary{
+    width:100px;
+   border-radius: 4px;
+}
+
+
+ label{
+     float: right;
+     font-size: 20px;
 }

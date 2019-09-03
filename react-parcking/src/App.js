@@ -99,8 +99,8 @@ export default class App extends Component{
   render(){
   return (
     <>
+        <Map/>
     <Form getPark={this.getPark} updatastate={this.updatastate} data= {this.data} />
-    <Map/>
     </>
   );
 }
